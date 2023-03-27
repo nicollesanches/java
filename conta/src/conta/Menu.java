@@ -3,6 +3,7 @@ package conta;
 import java.util.Scanner;
 
 import conta.model.Conta;
+import conta.model.ContaCorrente;
 import conta.util.Cores;
 
 public class Menu {
@@ -20,9 +21,9 @@ public class Menu {
 		
 		c1.visualizar();
 		
-		System.out.println("Saldo da conta: " + c1.getSaldo()); 
+		ContaCorrente cc1 = new ContaCorrente(1, 123, 1, "Kauan Manoel", 100000.00f, 1000.0f);
+		cc1.visualizar();
 		
-		c1.setTitular("Nicolle Sanches Ribeiro"); 
 		
 		c1.visualizar(); 
 		

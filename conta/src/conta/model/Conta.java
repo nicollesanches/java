@@ -93,5 +93,10 @@ public class Conta {
 		System.out.println("Nome do Titular:" + this.titular);
 		System.out.println("Saldo da conta:" + this.saldo);
 	}
+
+	public void visualizar1() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
