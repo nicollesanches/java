@@ -65,5 +65,7 @@ public class JaSports {
 
 	    private static void listarJogadores() {
 	        // Lógica para listar todos os jogadores
+	    	
+	    	gitignore
 	    }
 	}
