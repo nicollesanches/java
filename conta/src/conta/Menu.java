@@ -17,21 +17,10 @@ public class Menu {
 		String titular;
 		float saldo, limite, valor;
 		
-	Conta c1 = new Conta(1, 123, 1, "Nicolle Sanches", 100000.00f); 
-		
-		c1.visualizar();
-		
+	
 		ContaCorrente cc1 = new ContaCorrente(1, 123, 1, "Kauan Manoel", 100000.00f, 1000.0f);
 		cc1.visualizar();
 		
-		
-		c1.visualizar(); 
-		
-		c1.sacar(200000.0f);
-		c1.visualizar(); 
-		
-		c1.depositar(2000.0f);
-		c1.visualizar(); 
 		
 		while (true) {
 
