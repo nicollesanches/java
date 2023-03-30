@@ -12,12 +12,26 @@ public interface ContaRepository {
 	    public void cadastrar(Conta conta);
 	    public void atualizar(Conta conta);
 	    public void deletar(int numero);
-
-	   
 	    public void sacar(int numero, float valor);
 	    public void depositar(int numero, float valor);
 	    public void transferir(int numeroOrigem, int numeroDestino, float valor);
 
 	}
+
+	void procurarPorNumero(int numero);
+
+	void listarTodas();
+
+	void cadastrar(Conta conta);
+
+	void atualizar(Conta conta);
+
+	void deletar(int numero);
+
+	void sacar(int numero, float valor);
+
+	void depositar(int numero, float valor);
+
+	void transferir(int numeroOrigem, int numeroDestino, float valor);
 
 }
