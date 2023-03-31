@@ -15,11 +15,6 @@ public class ContaCorrente extends Conta {
 
 	public void setLimite(float limite) {
 		this.limite = limite;
-	} 
-	
-	public void visualizar() {
-		super.visualizar();
-		System.out.println("Limite de Crédito: " + this.limite);
 	}
 
 	@Override
@@ -36,8 +31,9 @@ public class ContaCorrente extends Conta {
 	}
 
 	@Override
-	public void visualizar1() {
+	public void visualizar() {
 		super.visualizar();
 		System.out.println("Limite de Crédito: " + this.limite);
 	}
-}
+
+}	
