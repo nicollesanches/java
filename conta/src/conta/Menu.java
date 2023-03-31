@@ -2,7 +2,7 @@ package conta;
 
 import java.util.Scanner;
 
-import conta.model.Conta;
+import conta.controller.ContaController;
 import conta.model.ContaCorrente;
 import conta.util.Cores;
 
@@ -16,7 +16,7 @@ public class Menu {
 		int opcao, numero, tipo, aniversario, numeroDestino;
 		String titular;
 		float saldo, limite, valor;
-		
+		ContaController contas = new ContaController();
 	
 		ContaCorrente cc1 = new ContaCorrente(1, 123, 1, "Kauan Manoel", 100000.00f, 1000.0f);
 		cc1.visualizar();
@@ -94,13 +94,17 @@ public class Menu {
 				}
 			}
 			case 2 -> {
-				System.out.println("Digite o número da conta: ");
-				aniversario1 = leia.nextInt();
+				System.out.println("Listar todas as contas\n\n: ");
+				contas.listarTodas();
+			break;
 			}
+			
 
 			case 3 -> {
-				System.out.println("Digite o número da conta: ");
-				numero1 = leia.nextInt();
+				System.out.println("Consultar dados da Conta - por número\n\n");
+                System.out.println("Digite o número da conta: ");
+                numero = leia.nextInt();
+                contas.procurarPorNumero(numero);
 
 				// criar o objeto conta poupanca
 			}

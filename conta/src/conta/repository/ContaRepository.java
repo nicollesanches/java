@@ -20,4 +20,35 @@ public interface ContaRepository {
 
 	}
 
+	void transferir(int numeroOrigem, int numeroDestino, float valor);
+
+	/**
+	 *  Procurar Conta por numero
+	 * */
+	void procurarPorNumero(int numero);
+
+	/**
+	 *  Método Listar todas as Contas
+	 * */
+	void listarTodas();
+
+	/** 
+	 * Método Cadastrar no Conta
+	 * */
+	void cadastrar(Conta conta);
+
+	/**
+	 * Atualizar dados da Conta
+	 * */
+	void atualizar(Conta conta);
+
+	/**
+	 *  Apagar Conta
+	 * */
+	void deletar(int numero);
+
+	void sacar(int numero, float valor);
+
+	void depositar(int numero, float valor);
+
 }
