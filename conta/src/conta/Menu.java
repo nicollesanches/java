@@ -205,8 +205,8 @@ public class Menu {
 	public static void sobre() {
 		System.out.println(
 				Cores.ANSI_BLACK_BACKGROUND + Cores.TEXT_YELLOW + "**************************************************");
-		System.out.println("Thiago Almeida Trevisani - thiagoatkl@gmail.com   ");
-		System.out.println("https://github.com/Thiagoatl                      ");
+		System.out.println("Nicolle Sanches Ribeiro - nicollesanches.ri@outlook.com   ");
+		System.out.println("      https://github.com/nicollesanches               ");
 		System.out.println("**************************************************");
 	}
 
